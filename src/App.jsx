@@ -86,8 +86,8 @@ function App() {
 							{data.Activities?.length ? 
 								(
 									<>
-										<span>{formatRupiah(data.Activities[data.Activities.length - 1].value)}</span>
-										<BsTriangleFill className={`${data.Activities[data.Activities.length - 1].type === 'expense' ? 'text-red-500 rotate-180' : 'text-green-500'}`}/>
+										<span>{formatRupiah(data.Activities[0].value)}</span>
+										<BsTriangleFill className={`${data.Activities[0].type === 'expense' ? 'text-red-500 rotate-180' : 'text-green-500'}`}/>
 									</>
 								) : "-"}
 							
